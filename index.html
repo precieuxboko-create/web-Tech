@@ -3,262 +3,210 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>PrecieuxMarket</title>
+<link rel="stylesheet" href="web.css">
 
-<style>
-/* RESET */
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-  font-family: Arial, sans-serif;
-}
+<title>ONLINE SHOP</title>
 
-body{
-  background:#f5f5f5;
-}
 
-/* NAVBAR */
-.navbar{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  padding:15px 40px;
-  background:#111;
-  color:white;
-}
 
-.logo{
-  font-size:20px;
-  font-weight:bold;
-  color:#f7b500;
-}
-
-.search{
-  flex:1;
-  margin:0 20px;
-}
-
-.search input{
-  width:100%;
-  padding:10px;
-  border-radius:5px;
-  border:none;
-}
-
-.icons{
-  display:flex;
-  gap:20px;
-}
-
-/* HERO */
-.hero{
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  padding:50px;
-  background:linear-gradient(to right, #111, #444);
-  color:white;
-  flex-wrap:wrap;
-}
-
-.hero-text{
-  max-width:500px;
-}
-
-.hero h1{
-  font-size:40px;
-  margin-bottom:15px;
-}
-
-.hero span{
-  color:#f7b500;
-}
-
-.hero button{
-  margin-top:20px;
-  padding:12px 20px;
-  border:none;
-  background:#f7b500;
-  color:black;
-  font-weight:bold;
-  border-radius:5px;
-  cursor:pointer;
-}
-
-.hero img{
-  width:350px;
-  border-radius:10px;
-}
-
-/* CATEGORIES */
-.categories{
-  padding:40px;
-}
-
-.categories h2{
-  margin-bottom:20px;
-}
-
-.grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit, minmax(150px,1fr));
-  gap:20px;
-}
-
-.card{
-  background:white;
-  padding:20px;
-  text-align:center;
-  border-radius:10px;
-  box-shadow:0 2px 10px rgba(0,0,0,0.1);
-  transition:0.3s;
-}
-
-.card:hover{
-  transform:translateY(-5px);
-}
-
-.card img{
-  width:60px;
-  margin-bottom:10px;
-}
-
-/* PRODUCTS */
-.products{
-  padding:40px;
-}
-
-.product-grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit, minmax(200px,1fr));
-  gap:20px;
-}
-
-.product{
-  background:white;
-  padding:15px;
-  border-radius:10px;
-  box-shadow:0 2px 10px rgba(0,0,0,0.1);
-}
-
-.product img{
-  width:100%;
-  border-radius:10px;
-}
-
-.price{
-  color:#f7b500;
-  font-weight:bold;
-  margin-top:10px;
-}
-
-/* FOOTER */
-.footer{
-  background:#111;
-  color:white;
-  text-align:center;
-  padding:20px;
-  margin-top:40px;
-}
-
-/* RESPONSIVE */
-@media(max-width:768px){
-  .hero{
-    flex-direction:column;
-    text-align:center;
-  }
-
-  .hero img{
-    margin-top:20px;
-  }
-}
-</style>
 </head>
 
 <body>
 
 <!-- NAVBAR -->
+
 <div class="navbar">
-  <div class="logo">PrecieuxMarket</div>
-  <div class="search">
-    <input type="text" placeholder="Rechercher un produit...">
-  </div>
-  <div class="icons">
-    <span>❤️</span>
-    <span>🛒</span>
-  </div>
+
+    <div class="logo">ONLINE SHOP</div>
+
+    <div class="search">
+        <input type="text" id="searchInput" placeholder="Rechercher un produit...">
+    </div>
+
+    <div class="icons">
+        <span>❤️</span>
+        <span>🛒</span>
+    </div>
+
 </div>
 
 <!-- HERO -->
+
 <section class="hero">
-  <div class="hero-text">
-    <h1>Tout ce dont vous avez besoin,<br> au <span>meilleur prix</span></h1>
-    <p>Des milliers de produits disponibles.</p>
-    <button>Découvrir maintenant</button>
-  </div>
-  <img src="https://images.unsplash.com/photo-1521334884684-d80222895322" alt="">
+
+    <div class="hero-text">
+        <h1>
+            Achetez vos produits au
+            <span>meilleur prix</span>
+        </h1>
+
+        <p>
+            Une plateforme moderne pour découvrir les meilleurs produits,
+            boutiques et offres en ligne.
+        </p>
+
+        <button>Découvrir maintenant</button>
+    </div>
+
+    <img src="images/Online shop.png" alt="Online shop.png">
+
 </section>
 
 <!-- CATEGORIES -->
+
 <section class="categories">
-  <h2>Catégories populaires</h2>
-  <div class="grid">
-    <div class="card">
-      <img src="https://img.icons8.com/ios-filled/100/headphones.png"/>
-      <p>Électronique</p>
+
+    <h2>Catégories populaires</h2>
+
+    <div class="grid">
+
+        <div class="card">
+            <img src="https://img.icons8.com/ios-filled/100/headphones.png">
+            <p>Électronique</p>
+        </div>
+
+        <div class="card">
+            <img src="https://img.icons8.com/ios-filled/100/t-shirt.png">
+            <p>Mode</p>
+        </div>
+
+        <div class="card">
+            <img src="https://img.icons8.com/ios-filled/100/sofa.png">
+            <p>Maison</p>
+        </div>
+
+        <div class="card">
+            <img src="https://img.icons8.com/ios-filled/100/shoes.png">
+            <p>Sport</p>
+        </div>
+
+
+        <div class="card">
+            <img src="images/images.png" alt="Server">
+            <p>Informatique</p>
+        </div>
+
+
+        <div class="card">
+            <img src="https://img.icons8.com/ios-filled/100/lipstick.png">
+            <p>Beauté</p>
+        </div>
+
+        <div class="card">
+            <img src="https://img.icons8.com/ios-filled/100/controller.png">
+            <p>Gaming</p>
+        </div>
+
     </div>
-    <div class="card">
-      <img src="https://img.icons8.com/ios-filled/100/t-shirt.png"/>
-      <p>Mode</p>
-    </div>
-    <div class="card">
-      <img src="https://img.icons8.com/ios-filled/100/sofa.png"/>
-      <p>Maison</p>
-    </div>
-    <div class="card">
-      <img src="https://img.icons8.com/ios-filled/100/shoes.png"/>
-      <p>Sport</p>
-    </div>
-  </div>
+
 </section>
 
 <!-- PRODUCTS -->
+
 <section class="products">
-  <h2>Top produits</h2>
-  <div class="product-grid">
 
-    <div class="product">
-      <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9">
-      <p>Smartwatch Série 8</p>
-      <p class="price">99.000 FCFA</p>
+    <h2>Nos Produits populaires</h2>
+
+    <div class="product-grid">
+
+        <div class="product" data-category="electronique">
+
+            <img src="images/Watch-x-series-10.png" alt="Watch-x-series-10">
+
+            <div class="product-content">
+
+                <h3> Watch-x-séries-10</h3>
+
+                <p class="quality">★★★★★ Haute qualité</p>
+
+                <p class="price">100.000 FCFA</p>
+
+                <button>Ajouter au panier</button>
+
+            </div>
+
+        </div>
+
+        <div class="product" data-category="informatique">
+
+            <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8">
+
+            <div class="product-content">
+
+                <h3>Laptop UltraBook</h3>
+
+                <p class="quality">★★★★★ Premium</p>
+
+                <p class="price">450.000 FCFA</p>
+
+                <button>Ajouter au panier</button>
+
+            </div>
+
+        </div>
+
+        <div class="product" data-category="beaute">
+
+            <img src="images/flacon-parfum.png" alt="Flacon de parfum">
+
+            <div class="product-content">
+
+                <h3>Flacon de parfum</h3>
+
+                <p class="quality">★★★★☆ Très populaire</p>
+
+                <p class="price">25.000 FCFA</p>
+
+                <button>Ajouter au panier</button>
+
+            </div>
+
+        </div>
+
+        <div class="product" data-category="sport">
+
+            <img src="images/basket.png">
+
+            <div class="product-content">
+
+                <h3>Sneakers Air Max</h3>
+
+                <p class="quality">★★★★★ Original</p>
+
+                <p class="price">60.000 FCFA</p>
+
+                <button>Ajouter au panier</button>
+
+            </div>
+
+        </div>
+
     </div>
 
-    <div class="product">
-      <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8">
-      <p>Laptop UltraBook</p>
-      <p class="price">450.000 FCFA</p>
-    </div>
+</section>
 
-    <div class="product">
-      <img src="https://images.unsplash.com/photo-1585386959984-a4155224a1ad">
-      <p>Écouteurs sans fil</p>
-      <p class="price">25.000 FCFA</p>
-    </div>
+<!-- CREATE SHOP -->
 
-    <div class="product">
-      <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff">
-      <p>Sneakers Air Max</p>
-      <p class="price">60.000 FCFA</p>
-    </div>
+<section class="shop-section">
 
-  </div>
+    <h2>Créer votre boutique en ligne</h2>
+
+    <p>
+        Lancez votre propre boutique sur PrecieuxMarket
+        et commencez à vendre vos produits facilement.
+    </p>
+
+    <button>
+        Créer ma boutique
+    </button>
+
 </section>
 
 <!-- FOOTER -->
-<div class="footer">
-  © 2026 PrecieuxMarket - Tous droits réservés
-</div>
 
+<div class="footer">
+    © 2026 PrecieuxMarket - Tous droits réservés
+</div>
+<script src="web.js"></script>
 </body>
 </html>
