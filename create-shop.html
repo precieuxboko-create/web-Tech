@@ -4,12 +4,100 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="web.css">
-<title>Créer ma boutique - PrecieuxMarket</title>
+<title>Créer ma boutique - ONLINE SHOP</title>
+
+<style>
+    /* ========================= */
+/* PRODUCT GRID (IMPORTANT) */
+/* ========================= */
+
+.product-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(240px, 1fr));
+    gap:25px;
+    align-items:stretch;
+}
+
+/* ========================= */
+/* PRODUCT CARD */
+/* ========================= */
+
+.product{
+    background:white;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,0.08);
+    display:flex;
+    flex-direction:column;
+    transition:0.3s;
+}
+
+.product:hover{
+    transform:translateY(-8px);
+    box-shadow:0 20px 45px rgba(0,0,0,0.12);
+}
+
+/* ========================= */
+/* 🔥 IMAGE FIX (IMPORTANT) */
+/* ========================= */
+
+.product img{
+    width:100%;
+    height:210px;              /* taille uniforme */
+    object-fit:cover;          /* coupe propre et centrée */
+    object-position:center;    /* centre l'image */
+    background:#f1f5f9;
+}
+
+/* ========================= */
+/* CONTENT */
+/* ========================= */
+
+.product-content{
+    padding:15px;
+    display:flex;
+    flex-direction:column;
+    gap:8px;
+}
+
+.product h3{
+    font-size:18px;
+}
+
+.quality{
+    font-size:14px;
+    color:#f97316;
+}
+
+.price{
+    font-size:18px;
+    font-weight:bold;
+    color:#EC4899;
+}
+
+/* ========================= */
+/* BUTTON */
+/* ========================= */
+
+.product button{
+    padding:10px;
+    border:none;
+    border-radius:10px;
+    background:#6366F1;
+    color:white;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.product button:hover{
+    background:#4F46E5;
+}
+</style>
 </head>
 <body>
 
 <div class="navbar">
-    <div class="logo">PrecieuxMarket</div>
+    <div class="logo">ONLINE SHOP</div>
 </div>
 
 <section class="form-section">
@@ -46,44 +134,257 @@
 
 <section class="more-products hidden" id="moreProducts">
     <h2>Plus de produits disponibles</h2>
+
     <div class="product-grid">
-        <div class="product" data-category="mode">
-            <img src="images/montre connecté.png" alt="Veste chic">
+
+        <div class="product" data-category="beaute , electronique">
+
+            <img src="images/THK.png" alt="THK">
+
             <div class="product-content">
-                <h3>Veste chic</h3>
-                <p class="quality">★★★★☆ Élégante</p>
+
+                <h3>THK</h3>
+
+                <p class="quality">★★★★☆ Très populaire</p>
+
+                <p class="price">50.000 FCFA</p>
+
+                <button>Ajouter au panier</button>
+
+            </div>
+
+        </div>
+
+        <div class="product" data-category="Mode">
+
+            <img src="images/shopping.png" alt="complet de mode">
+
+            <div class="product-content">
+
+                <h3>Le style</h3>
+
+                <p class="quality">★★★★☆ Top Mode</p>
+
+                <p class="price">30.000 FCFA</p>
+
+                <button>Ajouter au panier</button>
+
+            </div>
+
+        </div>
+
+    
+
+
+    <div class="product" data-category="Mode">
+
+            <img src="images/Fashion.png" alt="Fashion">
+
+            <div class="product-content">
+
+                <h3>Fashion</h3>
+
+                <p class="quality">★★★★☆ Special</p>
+
                 <p class="price">45.000 FCFA</p>
+
+                <button>Ajouter au panier</button>
+
             </div>
+
         </div>
-        <div class="product" data-category="maison">
-            <img src="images/Watch-x-series-10.png" alt="Lampe design">
+
+        <div class="product" data-category="sport">
+
+            <img src="images/Marchine spotif.png" alt="Machine de sport">
+
             <div class="product-content">
-                <h3>Lampe design</h3>
-                <p class="quality">★★★★★ Lumineuse</p>
-                <p class="price">18.000 FCFA</p>
+
+                <h3>Machine de sport</h3>
+
+                <p class="quality">★★★★★ Original</p>
+
+                <p class="price">120.000 FCFA</p>
+
+                <button>Ajouter au panier</button>
+
             </div>
+
         </div>
+
         <div class="product" data-category="gaming">
-            <img src="images/basket.png" alt="Manette pro">
+
+            <img src="images/PS5_pro.png" alt="Console de jeu">
+
             <div class="product-content">
-                <h3>Manette pro</h3>
-                <p class="quality">★★★★★ Ergonomique</p>
-                <p class="price">28.000 FCFA</p>
+
+                <h3>PlayStation 5 Pro</h3>
+
+                <p class="quality">★★★★★ Meilleure vente</p>
+
+                <p class="price">420.000 FCFA</p>
+
+                <button>Ajouter au panier</button>
+
             </div>
+
         </div>
+
+        
+
+
+        <div class="product" data-category="sport">
+
+            <img src="images/equipements.png" alt="foot equipements">
+
+            <div class="product-content">
+
+                <h3>Équipements de football</h3>
+
+                <p class="quality">★★★★★ Original</p>
+
+                <p class="price">500.000 FCFA</p>
+
+                <button>Ajouter au panier</button>
+
+            </div>
+
+        </div>
+
+        <div class="product" data-category="electronique">
+
+            <img src="images/Électroménager.png" alt="Electroménager">
+
+            <div class="product-content">
+
+                <h3>Électroménager</h3>
+
+                <p class="quality">★★★★☆ Très confortable</p>
+
+                <p class="price">120.000 FCFA</p>
+
+                <button>Ajouter au panier</button>
+
+            </div>
+
+        </div>
+
+
         <div class="product" data-category="beaute">
-            <img src="images/flacon-parfum.png" alt="Pack beauté">
+
+            <img src="images/IPSY.png" alt="Coffret de beauté">
+
             <div class="product-content">
-                <h3>Pack beauté</h3>
-                <p class="quality">★★★★☆ Bestseller</p>
-                <p class="price">32.000 FCFA</p>
+
+                <h3>IPSY</h3>
+
+                <p class="quality">★★★★☆ Original</p>
+
+                <p class="price">32.00 $US</p>
+
+                <button>Ajouter au panier</button>
+
             </div>
+
         </div>
-    </div>
+
+
+        <div class="product" data-category="Mode">
+
+            <img src="images/tee-shirt.png" alt="T-shirt">
+
+            <div class="product-content">
+
+                <h3>T-shirt</h3>
+
+                <p class="quality">★★★★☆ VIP</p>
+
+                <p class="price">10.000 FCFA</p>
+
+                <button>Ajouter au panier</button>
+
+            </div>
+
+        </div>
+
+        <div class="product" data-category="informatique">
+
+            <img src="images/Materiel_inf.png" alt="Matériels informatiques">
+
+            <div class="product-content">
+
+                <h3>Matériels informatiques</h3>
+
+                <p class="quality">★★★★★ Premium</p>
+
+                <p class="price">270.000 FCFA</p>
+
+                <button>Ajouter au panier</button>
+
+            </div>
+
+        </div>
+
+        <div class="product" data-category="Mode">
+
+            <img src="images/style.png" alt="Fashion">
+
+            <div class="product-content">
+
+                <h3>costume femme</h3>
+
+                <p class="quality">★★★★☆ Special</p>
+
+                <p class="price">45.00 $US</p>
+
+                <button>Ajouter au panier</button>
+
+            </div>
+
+        </div>
+
+
+        <div class="product" data-category="Sport">
+
+            <img src="images/Nike.png" alt="Nike Air Force 1">
+
+            <div class="product-content">
+
+                <h3>Nike Air Force 1</h3>
+
+                <p class="quality">★★★★☆ Special</p>
+
+                <p class="price">60.000 FCFA</p>
+
+                <button>Ajouter au panier</button>
+
+            </div>
+
+        </div>
+
+        <div class="product" data-category="Mode">
+
+            <img src="images/ERM.png" alt="Calslip ERM">
+
+            <div class="product-content">
+
+                <h3>Calslip ERM</h3>
+
+                <p class="quality">★★★★☆ Special</p>
+
+                <p class="price">12.00 $US</p>
+
+                <button>Ajouter au panier</button>
+
+            </div>
+
+        </div>
+
+    </div>    
 </section>
 
 <div class="footer">
-    © 2026 PrecieuxMarket - Tous droits réservés
+    © 2026 ONLINE SHOP - Tous droits réservés
 </div>
 <script src="create-shop.js"></script>
 </body>

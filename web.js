@@ -72,6 +72,10 @@ function updateCartUI() {
     });
 }
 
+function toggleDark(){
+    document.body.classList.toggle("dark");
+}
+
 function addToCart(productElement) {
     const name = productElement.querySelector("h3").textContent.trim();
     const priceText = productElement.querySelector(".price").textContent;

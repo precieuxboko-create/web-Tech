@@ -31,6 +31,21 @@ body{
     font-weight: 900;
     color: white;
     letter-spacing: 0.02em;
+
+    animation: glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 5px #fff,
+                     0 0 10px #6366F1,
+                     0 0 20px #6366F1;
+    }
+    to {
+        text-shadow: 0 0 10px #fff,
+                     0 0 20px #7C3AED,
+                     0 0 30px #7C3AED;
+    }
 }
 
 .search{
@@ -440,7 +455,7 @@ section h2{
 .checkout-btn{
     padding:15px 28px;
     border:none;
-    background:#FBBF24;
+    background:#10B981;
     color:white;
     border-radius:50px;
     cursor:pointer;
@@ -449,7 +464,7 @@ section h2{
 }
 
 .checkout-btn:hover{
-    background:#F59E0B;
+    background:hsl(161, 72%, 21%);
 }
 
 .form-section{
@@ -602,6 +617,8 @@ section h2{
     background:#F3F4F6;
 }
 
+
+
 /* FOOTER */
 
 .footer{
@@ -651,4 +668,131 @@ section h2{
         padding:40px 20px;
     }
 
+}
+
+/* ========================= */
+/* 🌙 DARK MODE GLOBAL */
+/* ========================= */
+
+body.dark{
+    background: linear-gradient(135deg, #0F172A, #020617);
+    color:#E2E8F0;
+}
+
+/* NAVBAR */
+body.dark .navbar{
+    background: linear-gradient(90deg, #1E293B, #0F172A);
+    box-shadow:0 10px 30px rgba(0,0,0,0.5);
+}
+
+/* SEARCH */
+body.dark .search input{
+    background:#1E293B;
+    color:white;
+}
+
+/* HERO */
+body.dark .hero{
+    background: linear-gradient(135deg, #020617, #1E1B4B);
+}
+
+/* CARDS */
+body.dark .card{
+    background:#1E293B;
+    color:#E2E8F0;
+    box-shadow:0 10px 30px rgba(0,0,0,0.5);
+}
+
+body.dark .card:hover{
+    background: linear-gradient(135deg, #6366F1, #7C3AED);
+    color:white;
+}
+
+/* PRODUCTS */
+body.dark .product{
+    background:#1E293B;
+    box-shadow:0 10px 30px rgba(0,0,0,0.5);
+}
+
+body.dark .product:hover{
+    box-shadow:0 20px 50px rgba(99, 102, 241, 0.3);
+}
+
+/* TEXT */
+body.dark h1,
+body.dark h2,
+body.dark h3{
+    color:#F1F5F9;
+}
+
+body.dark p{
+    color:#CBD5F5;
+}
+
+/* CART */
+body.dark .cart-section{
+    background: linear-gradient(135deg, #020617, #1E293B);
+}
+
+body.dark .cart-item{
+    background:#0F172A;
+}
+
+/* FORM */
+body.dark .form-container{
+    background: linear-gradient(135deg, #020617, #1E293B);
+}
+
+body.dark .form-field input,
+body.dark .form-field textarea{
+    background:#0F172A;
+    color:white;
+    border:1px solid #334155;
+}
+
+/* FOOTER */
+body.dark .footer{
+    background: linear-gradient(90deg, #020617, #1E293B);
+}
+
+/* ========================= */
+/* 🔘 BOUTON DARK MODE */
+/* ========================= */
+
+.toggle-btn{
+    padding:12px 22px;
+    border:none;
+    border-radius:50px;
+    background: linear-gradient(135deg, #050505, #424242);
+    color:white;
+    font-size:14px;
+    font-weight:bold;
+    cursor:pointer;
+    box-shadow:0 8px 20px rgba(19, 4, 71, 0.3);
+    transition: all 0.3s ease;
+    display:flex;
+    align-items:center;
+    gap:8px;
+}
+
+/* HOVER */
+.toggle-btn:hover{
+    transform: translateY(-3px);
+    box-shadow:0 12px 25px rgba(99, 102, 241, 0.5);
+}
+
+/* CLICK */
+.toggle-btn:active{
+    transform: scale(0.95);
+}
+
+/* DARK VERSION */
+body.dark .toggle-btn{
+    background: linear-gradient(135deg, #020617, #020618);
+    color:#ffffff;
+    box-shadow:0 8px 20px rgba(14, 165, 233, 0.4);
+}
+
+body.dark .toggle-btn:hover{
+    box-shadow:0 12px 25px rgba(37, 176, 204, 0.6);
 }
